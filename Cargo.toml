@@ -3,7 +3,7 @@ name = "rcbytes"
 # When releasing to crates.io:
 # - Update CHANGELOG.md.
 # - Create "v1.x.y" git tag.
-version = "1.2.1"
+version = "1.2.2"
 license = "MIT"
 authors = [
     "Carl Lerche <me@carllerche.com>",
@@ -13,7 +13,7 @@ authors = [
 description = "Rc version bytes crate"
 repository = "https://github.com/al8n/rcbytes"
 readme = "README.md"
-keywords = ["buffers", "zero-copy", "io"]
+keywords = ["buffers", "zero-copy", "io", "bytes"]
 categories = ["network-programming", "data-structures"]
 edition = "2018"
 
