@@ -1,0 +1,31 @@
+[package]
+name = "rcbytes"
+# When releasing to crates.io:
+# - Update CHANGELOG.md.
+# - Create "v1.x.y" git tag.
+version = "1.2.1"
+license = "MIT"
+authors = [
+    "Carl Lerche <me@carllerche.com>",
+    "Sean McArthur <sean@seanmonstar.com>",
+    "Al Liu <scygliu1@gmail.com>",
+]
+description = "Rc version bytes crate"
+repository = "https://github.com/al8n/rcbytes"
+readme = "README.md"
+keywords = ["buffers", "zero-copy", "io"]
+categories = ["network-programming", "data-structures"]
+edition = "2018"
+
+[features]
+default = ["std"]
+std = []
+
+[dependencies]
+serde = { version = "1.0.60", optional = true, default-features = false, features = ["alloc"] }
+
+[dev-dependencies]
+serde_test = "1.0"
+
+[package.metadata.docs.rs]
+rustdoc-args = ["--cfg", "docsrs"]
